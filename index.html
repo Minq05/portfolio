@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoang Minh Quan - React/Node.js Developer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="code-animation">
+          <span>&lt;</span>
+          <span>Quan</span>
+          <span>/&gt;</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="header-container"></div>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="greeting">Xin chào, tôi là</span>
+              <span class="name">Hoàng Minh Quân</span>
+              <span class="role">React/Node.js Developer</span>
+            </h1>
+            <p class="hero-description">
+              Fresher Developer đam mê tạo ra những sản phẩm web tối ưu và thân
+              thiện với người dùng
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Liên hệ</a>
+              <a href="https://drive.google.com/file/d/1nXx7UL_Y3TR4JA4GZw5KJmLcTculAywk/view?usp=sharing" class="btn btn-secondary" target="_blank"
+                >Xem CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="code-editor">
+              <div class="editor-header">
+                <div class="editor-buttons">
+                  <span class="btn-close"></span>
+                  <span class="btn-minimize"></span>
+                  <span class="btn-maximize"></span>
+                </div>
+                <span class="file-name">portfolio.js</span>
+              </div>
+              <div class="editor-content">
+                <div class="code-line">
+                  <span class="keyword">const</span>
+                  <span class="variable">developer</span> = {
+                </div>
+                <div class="code-line">
+                  <span class="property">name</span>:
+                  <span class="string">"Hoàng Minh Quân"</span>,
+                </div>
+                <div class="code-line">
+                  <span class="property">skills</span>: [<span class="string"
+                    >"React"</span
+                  >, <span class="string">"Node.js"</span>],
+                </div>
+                <div class="code-line">
+                  <span class="property">passion</span>:
+                  <span class="string">"Frontend Development"</span>
+                </div>
+                <div class="code-line">};</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title">Về tôi</h2>
+          <div class="about-content">
+            <div class="about-info">
+              <div class="info-card">
+                <i class="fas fa-user"></i>
+                <h3>Thông tin cá nhân</h3>
+                <ul>
+                  <li><strong>Ngày sinh:</strong> 22/02/2005</li>
+                  <li><strong>Giới tính:</strong> Nam</li>
+                  <li>
+                    <strong>Địa chỉ:</strong> Vân Canh - Hoài Đức - Hà Nội
+                  </li>
+                  <li><strong>Email:</strong> hoangquan222005@gmail.com</li>
+                  <li><strong>SĐT:</strong> 0364017978</li>
+                </ul>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Học vấn</h3>
+                <div class="education-item">
+                  <h4>FPT POLYTECHNIC</h4>
+                  <p>Website Developer (08/2023 - 09/2025)</p>
+                  <p><strong>GPA:</strong> 8.8/10</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-goals">
+              <div class="goal-card">
+                <i class="fas fa-target"></i>
+                <h3>Mục tiêu ngắn hạn</h3>
+                <p>
+                  Thực tập trong môi trường chuyên nghiệp để nâng cao kỹ năng
+                  lập trình Frontend, đặc biệt là ReactJS, Node.js và UI/UX
+                  Design.
+                </p>
+              </div>
+              <div class="goal-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Mục tiêu dài hạn</h3>
+                <p>
+                  Trở thành Fullstack Developer chuyên nghiệp, có khả năng xây
+                  dựng các sản phẩm web tối ưu và thân thiện với người dùng. Ứng
+                  dụng AI trong lập trình web để tối ưu hiệu suất.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title">Kỹ năng</h2>
+          <div class="skills-content">
+            <div class="skill-category">
+              <h3>Ngôn ngữ lập trình</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js-square"></i>
+                  <span>TypeScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Frameworks & Libraries</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code"></i>
+                  <span>Ant Design</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-bootstrap"></i>
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Others</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-figma"></i>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-cogs"></i>
+                  <span>CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <h2 class="section-title">Kinh nghiệm</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">05/2025 - 08/2025</div>
+              <div class="timeline-content">
+                <h3>Intern - Fullstack Developer</h3>
+                <h4>CODEFARM EDUCATION TECHNOLOGY JOINT STOCK COMPANY</h4>
+                <ul>
+                  <li>
+                    Thiết kế và phát triển backend APIs với Node.js, TypeScript,
+                    MongoDB
+                  </li>
+                  <li>Xây dựng cơ sở dữ liệu và triển khai logic nghiệp vụ</li>
+                  <li>Phát triển và tối ưu giao diện người dùng</li>
+                  <li>Triển khai, bảo trì và tối ưu hiệu suất hệ thống</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title">Dự án</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/Graduation_Project"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Perfume Store Website</h3>
+                <p>
+                  Website thương mại điện tử responsive cho việc khám phá và đặt
+                  hàng nước hoa
+                </p>
+                <div class="project-tech">
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Redux</span>
+                  <span>Ant Design</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Team Leader (6 thành viên)
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/merged-project"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Book Store Website</h3>
+                <p>
+                  Ứng dụng web responsive cho việc khám phá, đặt hàng và quản lý
+                  sách với hệ thống thanh toán tích hợp
+                </p>
+                <div class="project-tech">
+                  <span>TypeScript</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Ant Design</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Developer (4 thành viên)
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/MQ_CUISINE"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://minq05.github.io/MQ_CUISINE"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>MQ CUISINE Website</h3>
+                <p>
+                  Website nhà hàng với menu tương tác, hệ thống đặt bàn và giao
+                  diện hiện đại
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Frontend Developer
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/FashionStore"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://minq05.github.io/FashionStore"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Fashion Store Website</h3>
+                <p>
+                  Website cửa hàng thời trang với catalog sản phẩm, shopping
+                  cart và UX/UI hiện đại
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Frontend Developer
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/TechEvent"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://minq05.github.io/TechEvent"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>TechEvent Website</h3>
+                <p>
+                  Website sự kiện công nghệ với landing page chuyên nghiệp và hệ
+                  thống đăng ký
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Frontend Developer
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <a
+                    href="https://github.com/Minq05/portfolio"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://minq05.github.io/portfolio"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Personal Portfolio</h3>
+                <p>
+                  Website portfolio cá nhân với animations chuyên nghiệp và
+                  responsive design
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-role">
+                  <strong>Vai trò:</strong> Full Developer
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center; margin-top: 2rem">
+            <a href="pages/projects.html" class="btn btn-secondary"
+              >Xem tất cả dự án</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title">Liên hệ</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:hoangquan222005@gmail.com"
+                    >hoangquan222005@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h3>Điện thoại</h3>
+                  <a href="tel:0364017978">0364017978</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h3>Địa chỉ</h3>
+                  <p>Vân Canh - Hoài Đức - Hà Nội</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <h3>Portfolio</h3>
+                  <a href="https://minq05.github.io/portfolio" target="_blank"
+                    >minq05.portfolio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Họ và tên"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tin nhắn"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Gửi tin nhắn
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
